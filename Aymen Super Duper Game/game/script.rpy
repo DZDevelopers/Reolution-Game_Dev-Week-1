@@ -3,16 +3,16 @@ default player = "Aymen"
 define P = Character("[player]")
 default studied = False
 default worked = False
+image bg room = "images/BG.png"
 
 label start:
-    image bg room = "images/BG.png"
     scene bg room
 
     N "You signed up for Hack Club Resolution,\nBut exams and procrastination got in the way."
     N "Now you only have 1.5 hours left to ship something."
 
     $ player = renpy.input("What is your name? (default is Aymen)", length=32)
-    $ player = player.strip()
+    $ player = player.strip() if player is not None else ""
     $ player = player.capitalize()
     if player == "":
         $ player = "Aymen"
