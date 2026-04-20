@@ -1,1 +1,1 @@
-# Reolution-Game_Dev-Week-1
+# Resolution-Game_Dev-Week-1
